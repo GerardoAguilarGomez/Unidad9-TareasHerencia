@@ -31,6 +31,8 @@ namespace TareasHerencia
             Console.WriteLine(P1.MayorEdad());
             */
 
+            /*
+             EJERCICIO 2-CLASE PERSONA
             Console.WriteLine("Inserta nombre:");
             string nombre = Console.ReadLine();
             Console.WriteLine("Inserta edad:");
@@ -112,6 +114,32 @@ namespace TareasHerencia
             {
                 Console.WriteLine("Es menor de edad");
             }
+            */
+
+            /*
+             PRUEBAS CLASE EJERCICIO 3-CLASE PASSWORD
+            Password P1 = new Password(25);
+            Console.WriteLine(P1.Contraseña);
+            Console.WriteLine(P1.EsFuerte());
+            */
+
+            Console.WriteLine("Indica cuantas passwords quieres generar:");
+            string c = Console.ReadLine();
+            int cuantas = Convert.ToInt32(c);
+
+            Password[] contraseñas = new Password[cuantas];
+            bool[] saber = new bool[cuantas];
+            Console.WriteLine("Indica el nº de caracteres de cada password");
+            string longitud = Console.ReadLine();
+
+            for (int i=0;i<=contraseñas.Length-1;i++)
+            {
+                contraseñas[i] = new Password(Convert.ToInt32(longitud));
+                saber[i] = contraseñas[i].EsFuerte();
+
+                Console.WriteLine("Contraseña {0}: {1}. Seguridad: {2}", i + 1, contraseñas[i].Contraseña, saber[i]);
+            }
+
         }
     }
 }
