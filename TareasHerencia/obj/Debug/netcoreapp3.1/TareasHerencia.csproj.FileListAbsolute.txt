@@ -1,0 +1,13 @@
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\bin\Debug\netcoreapp3.1\TareasHerencia.exe
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\bin\Debug\netcoreapp3.1\TareasHerencia.deps.json
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\bin\Debug\netcoreapp3.1\TareasHerencia.runtimeconfig.json
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\bin\Debug\netcoreapp3.1\TareasHerencia.runtimeconfig.dev.json
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\bin\Debug\netcoreapp3.1\TareasHerencia.dll
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\bin\Debug\netcoreapp3.1\TareasHerencia.pdb
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.csprojAssemblyReference.cache
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.AssemblyInfoInputs.cache
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.AssemblyInfo.cs
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.csproj.CoreCompileInputs.cache
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.dll
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.pdb
+C:\Users\gerardo.aguilar\source\repos\GerardoAguilarGomez\Unidad9-TareasHerencia\TareasHerencia\obj\Debug\netcoreapp3.1\TareasHerencia.genruntimeconfig.cache
