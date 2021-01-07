@@ -123,6 +123,8 @@ namespace TareasHerencia
             Console.WriteLine(P1.EsFuerte());
             */
 
+            /*
+             EJERCICIO 3 CLASE PASSWORD
             Console.WriteLine("Indica cuantas passwords quieres generar:");
             string c = Console.ReadLine();
             int cuantas = Convert.ToInt32(c);
@@ -139,7 +141,89 @@ namespace TareasHerencia
 
                 Console.WriteLine("Contraseña {0}: {1}. Seguridad: {2}", i + 1, contraseñas[i].Contraseña, saber[i]);
             }
+            */
+
+            /*
+             * PRUEBAS EJERCICIO 4-ELECTRODOMESTICOS
+            Electrodomestico e1 = new Electrodomestico(3000,"rojo",'C',75);
+            e1.toString();
+
+            Lavadora L1 = new Lavadora();
+            Console.WriteLine("Precio base: {0}", L1.Precio_base);
+            Lavadora L2 = new Lavadora(2500,47);
+            Console.WriteLine("Precio base: {0}. Peso: {1}", L2.Precio_base,L2.Peso);
+                       
+            Lavadora L3 = new Lavadora(1200,"negro",'A',45,60);
+            Console.WriteLine("Precio base: {0}. Peso: {1}. Color: {2}. Consumo: {3}. Carga: {4} kg", L3.Precio_base, L3.Peso,L3.Color,L3.Consumo_energetico,L3.Carga);
+            L3.toString();
+            Console.WriteLine("Precioooo final: {0}", L3.PrecioFinal());
+             */
+
+            Object[] ListaElectrodomesticos =new Object[10];
+            //Electrodomestico[] ListaElectrodomesticos = new Electrodomestico[10];
+            ListaElectrodomesticos[0] = new Television(1200, "negro", 'A', 45, 50,true);
+            ListaElectrodomesticos[1] = new Electrodomestico(600, "blanco", 'C',5);
+            ListaElectrodomesticos[2] = new Lavadora(750 ,"azul", 'D', 12,50);
+            ListaElectrodomesticos[3] = new Television(800, "", 'C', 15, 15, false);
+            ListaElectrodomesticos[4] = new Electrodomestico(850, "verde", 'E', 2);
+            ListaElectrodomesticos[5] = new Lavadora(300, "blanco", 'B', 2, 8);
+            ListaElectrodomesticos[6] = new Television(650, "negro", 'F', 10, 39, true);
+            ListaElectrodomesticos[7] = new Electrodomestico(300, "rojo", 'A', 8);
+            ListaElectrodomesticos[8] = new Lavadora(200, "blanco", 'C', 35, 3);
+            ListaElectrodomesticos[9] = new Television(150, "negro", 'E', 10, 14, true);
+
+            int precio_televisores = 0;
+            int precio_lavadoras = 0;
+            int precio_electrodomesticos = 0;
+
+
+            for (int i = 0; i <= ListaElectrodomesticos.Length - 1; i++)
+            {
+                /* IMPORTANTE, FORMA DE LLAMAR A UN METODO DE UNA CLASE HEREDADA
+                 * 
+                 * 
+                Television objeto;
+
+                objeto=(Television)ListaElectrodomesticos[i];
+                objeto.solotv();
+                */
+                Electrodomestico objeto;
+                objeto = (Electrodomestico)ListaElectrodomesticos[i];
+                objeto.toString();
+
+                //Console.WriteLine(ListaElectrodomesticos[i].GetType().Name); ME DA EL TIPO DE OBJETO
+
+                //Console.WriteLine(ListaElectrodomesticos[i].);
+                //Console.WriteLine("El precio final del electrodoméstico {0} es {1} euros", i + 1, ListaElectrodomesticos[i].GetType());
+                //Console.WriteLine(ListaElectrodomesticos[i].PrecioFinal());
+                /*
+                Console.WriteLine("El precio final del electrodoméstico {0} es {1} euros", i + 1, ListaElectrodomesticos[i].PrecioFinal());
+                
+
+                */
+                precio_electrodomesticos = precio_electrodomesticos + objeto.PrecioFinal();
+
+                if (ListaElectrodomesticos[i] is Television == true)
+                {
+                    precio_televisores = precio_televisores + objeto.PrecioFinal();
+
+                    
+                }
+                if (ListaElectrodomesticos[i] is Lavadora == true)
+                {
+                    precio_lavadoras = precio_lavadoras + objeto.PrecioFinal();
+                }
+                
+
+            }
+
+            Console.WriteLine("Precio de los televisores: {0}", precio_televisores);
+            Console.WriteLine("Precio de las lavadoras: {0}", precio_lavadoras);
+            Console.WriteLine("Precio de todos los electrodomésticos: {0}", precio_electrodomesticos);
+
 
         }
+
+     
     }
 }
